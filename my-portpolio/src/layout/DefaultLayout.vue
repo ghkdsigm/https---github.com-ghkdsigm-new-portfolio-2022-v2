@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-screen mx-auto relative">
+  <div class="flex h-screen mx-auto relative container">
     <!--사이드섹션-->
     <div class="w-1/6 p-5 flex h-screen items-center border-gray-200 dark:border-gray-800 text-center">
       <div class="flex flex-col text-center">

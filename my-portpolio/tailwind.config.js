@@ -16,7 +16,19 @@ module.exports = {
         'primary-dark': '#0D2438',
 				'secondary-dark': '#102D44',
 				'ternary-dark': '#1E3851',
-      }
+      },
+      container: {
+        // screen: {
+        //   '3xl': { max: '1800px' },
+        // },
+        padding: {
+          DEFAULT: '1rem',
+          sm: '2rem',
+          lg: '4rem',
+          xl: '5rem',
+          '2xl': '0rem',
+        },
+      },
     },
   },
   plugins: [],
