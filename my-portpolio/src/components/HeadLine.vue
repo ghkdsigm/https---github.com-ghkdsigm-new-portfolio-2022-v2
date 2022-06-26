@@ -1,9 +1,9 @@
 <template>
-  <div class="lg:pr-14 pr-4 self-center mt-80 text-right">
+  <div class="lg:pr-14 pr-4 self-center xl:mt-96 lg:mt-80 md:mt-64 mt-0 text-right">
     <router-link :to="route.path" :class="`transition-all ease-in-out linkWrap`" v-for="route in routes" :key="route">
       <div v-if="route.meta.isMenu">
           <i :class="route.icon"></i> 
-          <span class="ml-5 text-7xl font-light hidden lg:inline-block navLink py-4">{{route.title}}</span>
+          <span class="ml-5 text-8xl font-light hidden lg:inline-block navLink py-4">{{route.title}}</span>
       </div>
     </router-link>  
   </div> 
