@@ -1,7 +1,14 @@
 <template>
   <div>
-    <HeadLineVue></HeadLineVue>
-    <Introduce></Introduce>
+    <div class="">
+      <HeadLineVue></HeadLineVue>
+    </div>
+    <div class="">
+      <Introduce></Introduce>
+    </div>
+    <div class="">
+
+    </div>
   </div>
 </template>
 
