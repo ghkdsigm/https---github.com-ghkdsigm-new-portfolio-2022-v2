@@ -2,7 +2,7 @@
   <div class="flex h-screen mx-auto relative container">
     <div class="" id="noise" style="background-image: url('https://www.marvinx.com/assets/images/noise.png');"></div>
     <!--사이드섹션-->
-    <div class="w-1/6 py-5 flex justify-center h-screen items-center border-gray-200 dark:border-gray-800 text-center">
+    <div class="lg:w-1/6 w-0 lg:flex hidden py-5 justify-center h-screen items-center border-gray-200 dark:border-gray-800 text-center">
       <div class="flex flex-col text-center">
         <!--홈 로고 링크-->
         <router-link to="/">
@@ -28,7 +28,7 @@
       </div>
     </div>    
     <!--메인섹션-->
-    <div class="w-5/6 flex-1 min-h-full scroll-smooth overflow-y-auto px-16 items-center text-center">      
+    <div class="lg:w-5/6 w-full flex-1 min-h-full scroll-smooth overflow-y-auto px-16 items-center text-center">      
       <router-view></router-view>
     </div>
   </div>

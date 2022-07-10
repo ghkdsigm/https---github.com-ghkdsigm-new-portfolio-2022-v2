@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:pr-14 pr-4 self-center mt-80 text-left">
+  <div class="self-center mt-80 text-left">
     <h2 class="comment text-6xl font-extrabold leading-tight" slot="s_comment">
       Various<br />Work Experiences<br />For your Brand
     </h2>
