@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory} from 'vue-router'
+//import store from '../store'
 import Home from '../pages/Home.vue'
 import Works from '../pages/Works.vue'
 import Career from '../pages/Career.vue'
@@ -19,5 +20,6 @@ const router = createRouter({
     history: createWebHistory(),
     routes,
 })
+
 
 export default router
