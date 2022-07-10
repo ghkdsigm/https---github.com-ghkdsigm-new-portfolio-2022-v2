@@ -2,11 +2,11 @@
   <div class="flex h-screen mx-auto relative container">
     <div class="" id="noise" style="background-image: url('https://www.marvinx.com/assets/images/noise.png');"></div>
     <!--사이드섹션-->
-    <div class="w-1/6 p-5 flex justify-center h-screen items-center border-gray-200 dark:border-gray-800 text-center">
+    <div class="w-1/6 py-5 flex justify-center h-screen items-center border-gray-200 dark:border-gray-800 text-center">
       <div class="flex flex-col text-center">
         <!--홈 로고 링크-->
         <router-link to="/">
-            <i class="fab fa-twitter transition-all ease-in-out lg:text-3xl text-xl text-primary hover:text-dark mb-3"><span class="text-lg font-light hidden lg:inline-block align-text-top">Hwang Seung Hyun</span></i>
+            <i class="fab fa-twitter transition-all ease-in-out lg:text-3xl text-xl text-primary hover:text-dark mb-3"><span class="text-2xl font-light hidden lg:inline-block align-text-top">Motor H</span></i>
             <p>Fronend Developer</p>
         </router-link>
 
