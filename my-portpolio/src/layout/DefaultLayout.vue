@@ -9,7 +9,13 @@
             <i class="fab fa-twitter transition-all ease-in-out lg:text-3xl text-xl text-primary hover:text-dark mb-3"><span class="text-2xl font-light hidden lg:inline-block align-text-top">Motor H</span></i>
             <p>Fronend Developer</p>
         </router-link>
-
+        <!--다크모드-->
+        <div class="relative">
+            <button type="button" class="px-2 mb-1" @click="toggleDarkMode" :class="this.$store.state.darkmode ? 'dark' : ''">
+                <i class="far fa-sun transition-all ease-in-out border-2 border-gray-800 text-yellow-50 lg:px-5 px-3 py-2 dark:bg-gray-800 rounded-full lg:text-base text-base dark:hover:bg-opacity-80" :class="isDark ? 'hidden' : 'block'"> <span class="hidden lg:inline-block pl-0 lg:pl-2 text-white font-light"> 라이트모드</span></i>
+                <i class="fas fa-moon transition-all ease-in-out border-2 border-blue-600  text-blue-600 lg:px-5 px-3 py-2 rounded-full lg:text-base text-base hover:bg-gray-50" :class="isDark ? 'block' : 'hidden'"> <span class="hidden lg:inline-block pl-0 lg:pl-2 font-light"> 다크모드</span></i>
+            </button>
+        </div>
         <!--사이드메뉴-->
         <div class="flex flex-col items-start space-y-3 lg:mt-4 lg:mb-4">
           <!-- <router-link :to="route.path" :class="`transition-all ease-in-out hover:text-primary hover:bg-blue-50 dark:hover:bg-gray-800 px-4 py-2 rounded-full  cursor-pointer dark:text-gray-300 ${router.currentRoute.value.name == route.name ? 'text-primary dark:text-primary'  : ''}`" v-for="route in routes" :key="route">
@@ -20,16 +26,9 @@
           </router-link>-->
         </div>
       </div>
-    </div>
+    </div>    
     <!--메인섹션-->
-    <div class="w-5/6 flex-1 min-h-full scroll-smooth overflow-y-auto px-16 items-center text-center">
-      <!--다크모드-->
-      <div class="w-full lg:pr-3 flex justify-center mt-7">
-          <button type="button" class="px-2 mb-1" @click="toggleDarkMode" :class="this.$store.state.darkmode ? 'dark' : ''">
-              <i class="far fa-sun transition-all ease-in-out border-2 border-gray-800 text-yellow-50 lg:px-5 px-3 py-2 dark:bg-gray-800 rounded-full lg:text-base text-base dark:hover:bg-opacity-80" :class="isDark ? 'hidden' : 'block'"> <span class="hidden lg:inline-block pl-0 lg:pl-2 text-white font-light"> 라이트모드</span></i>
-              <i class="fas fa-moon transition-all ease-in-out border-2 border-blue-600  text-blue-600 lg:px-5 px-3 py-2 rounded-full lg:text-base text-base hover:bg-gray-50" :class="isDark ? 'block' : 'hidden'"> <span class="hidden lg:inline-block pl-0 lg:pl-2 font-light"> 다크모드</span></i>
-          </button>
-      </div>
+    <div class="w-5/6 flex-1 min-h-full scroll-smooth overflow-y-auto px-16 items-center text-center">      
       <router-view></router-view>
     </div>
   </div>
