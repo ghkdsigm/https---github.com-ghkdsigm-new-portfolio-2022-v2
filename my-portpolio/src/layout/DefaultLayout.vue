@@ -1,11 +1,12 @@
 <template>
   <div class="flex h-screen mx-auto relative container">
+    <div class="" id="noise" style="background-image: url('https://www.marvinx.com/assets/images/noise.png');"></div>
     <!--사이드섹션-->
-    <div class="w-1/6 p-5 flex h-screen items-center border-gray-200 dark:border-gray-800 text-center">
+    <div class="w-1/6 p-5 flex justify-center h-screen items-center border-gray-200 dark:border-gray-800 text-center">
       <div class="flex flex-col text-center">
-        <!--트위터 로고-->
+        <!--홈 로고 링크-->
         <router-link to="/">
-            <i class="fab fa-twitter transition-all ease-in-out lg:text-3xl text-xl text-primary hover:text-dark lg:ml-4 mb-3"><span class="ml-5 text-lg font-light hidden lg:inline-block align-text-top">Hwang Seung Hyun</span></i>
+            <i class="fab fa-twitter transition-all ease-in-out lg:text-3xl text-xl text-primary hover:text-dark mb-3"><span class="text-lg font-light hidden lg:inline-block align-text-top">Hwang Seung Hyun</span></i>
             <p>Fronend Developer</p>
         </router-link>
 
@@ -21,7 +22,7 @@
       </div>
     </div>
     <!--메인섹션-->
-    <div class="w-5/6 flex-1 min-h-full scroll-smooth overflow-y-auto p-5 items-center text-center">
+    <div class="w-5/6 flex-1 min-h-full scroll-smooth overflow-y-auto px-16 items-center text-center">
       <router-view></router-view>
     </div>
   </div>
