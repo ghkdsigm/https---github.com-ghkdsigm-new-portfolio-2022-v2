@@ -21,7 +21,7 @@
                 p-2
               text-third 
               dark:text-primary 
-              dark:bg-zinc-700 bg-zinc-400
+              dark:bg-zinc-700 bg-zinc-300
                 focus-visible:ring-2 focus-visible:ring-green-400
                 rounded-lg
                 mt-4
