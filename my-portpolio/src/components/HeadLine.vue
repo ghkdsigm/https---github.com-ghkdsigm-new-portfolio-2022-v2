@@ -44,10 +44,10 @@ export default {
   .dark_navLink:hover {color: #fff;}
   .white_navLink {    
     color: #fff;
-    -webkit-text-stroke: 1px #000;
-    text-stroke: 1px #000;
+    -webkit-text-stroke: 1px #11216b;
+    text-stroke: 1px #11216b;
   }
-  .white_navLink:hover {color: hsl(216deg 8% 12%);}
+  .white_navLink:hover {color:#20317d;}
   /* .linkWrap:hover .navLink {
     color: #fff;
   } */

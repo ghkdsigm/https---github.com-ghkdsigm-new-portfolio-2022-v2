@@ -14,7 +14,7 @@
       <div class="col-span-3 flex items-center dark:text-secondary text-secondary-dark">
         <div>
           <h3 class="text-4xl dark:text-secondary font-bold">황 승 현</h3>
-          <p class="text-2xl py-2 text-primary">HWANG SEUNG HYUN</p>
+          <p class="text-2xl py-2 text-third dark:text-third-dark">HWANG SEUNG HYUN</p>
           <ul class="font-light text-lg">
             <li class="py-1">1990.01.13. Yangcheon-gu, Seoul, Republic of Korea</li>
             <li class="py-1">ghkdsigm3@naver.com / ghkdsigm3@gmail.com</li>

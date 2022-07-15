@@ -10,12 +10,14 @@ module.exports = {
         //primary: '#1DA1F2',
         primary: '#ffb300',
         secondary: '#fff',
+        third: '#11216b',
         dark: '#1a91da',
         light: '#a5d0f5',
         lighter: '#D4E5F4',
 
         'primary-dark': '#0D2438',
 				'secondary-dark': '#000',
+        'third-dark': '#ffb300',
 				'ternary-dark': '#1E3851',
       },
       container: {

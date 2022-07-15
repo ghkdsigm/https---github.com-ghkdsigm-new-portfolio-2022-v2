@@ -6,7 +6,7 @@
       <div class="flex flex-col text-center">
         <!--홈 로고 링크-->
         <router-link to="/">
-            <i class="fab fa-twitter transition-all ease-in-out lg:text-3xl text-xl text-primary hover:text-dark mb-3"><span class="text-2xl font-light hidden lg:inline-block align-text-top" style="font-family: 'Archivo Black', sans-serif;">Motor H</span></i>
+            <i class="fab fa-twitter transition-all ease-in-out lg:text-3xl text-xl text-third dark:text-third-dark hover:text-dark mb-3"><span class="text-2xl font-light hidden lg:inline-block align-text-top" style="font-family: 'Archivo Black', sans-serif;">Motor H</span></i>
             <p class="dark:text-secondary text-secondary-dark">Fronend Developer</p>
         </router-link>
         <!--다크모드-->
@@ -19,8 +19,8 @@
             <button
               class="
                 p-2
-              text-yellow-300 hover:text-yellow-200
-              dark:text-slate-300 dark:hover:text-slate-100
+              text-third 
+              dark:text-primary 
               dark:bg-zinc-700 bg-zinc-400
                 focus-visible:ring-2 focus-visible:ring-green-400
                 rounded-lg
