@@ -4,7 +4,7 @@
       <router-link :to="route.path" :class="`transition-all ease-in-out linkWrap block w-fit`" v-for="route in routes" :key="route">
         <div v-if="route.meta.isMenu" class="">
             <i :class="route.icon"></i> 
-            <span class="ml-5 font-light lg:inline-block navLink py-4" style="font-size:10vh">{{route.title}}</span>
+            <span class="ml-5 font-light lg:inline-block navLink py-4" style="font-size:10vh; font-family: 'Archivo Black', sans-serif;">{{route.title}}</span>
         </div>
       </router-link>  
     </div>

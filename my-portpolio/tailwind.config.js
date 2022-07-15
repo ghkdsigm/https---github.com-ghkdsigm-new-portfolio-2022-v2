@@ -9,12 +9,13 @@ module.exports = {
       colors:{
         //primary: '#1DA1F2',
         primary: '#ffb300',
+        secondary: '#fff',
         dark: '#1a91da',
         light: '#a5d0f5',
         lighter: '#D4E5F4',
 
         'primary-dark': '#0D2438',
-				'secondary-dark': '#102D44',
+				'secondary-dark': '#000',
 				'ternary-dark': '#1E3851',
       },
       container: {

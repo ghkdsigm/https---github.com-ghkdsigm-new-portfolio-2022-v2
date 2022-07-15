@@ -1,6 +1,6 @@
 <template>
   <div class="self-center mt-80 text-left">
-    <h2 class="comment text-6xl font-extrabold leading-tight" slot="s_comment">
+    <h2 class="comment text-6xl font-extrabold leading-tight dark:text-secondary text-secondary-dark">
       Various<br />Work Experiences<br />For your Brand
     </h2>
     <div class="my-14 grid grid-cols-5 justify-items-center">
@@ -11,10 +11,10 @@
         
       </div>
       <!--기본정보(정보)-->
-      <div class="col-span-3 flex items-center">
+      <div class="col-span-3 flex items-center dark:text-secondary text-secondary-dark">
         <div>
-          <h3 class="text-4xl dark:text-primary">황 승 현</h3>
-          <p class="text-4xl py-2 text-primary">HWANG SEUNG HYUN</p>
+          <h3 class="text-4xl dark:text-secondary font-bold">황 승 현</h3>
+          <p class="text-2xl py-2 text-primary">HWANG SEUNG HYUN</p>
           <ul class="font-light text-lg">
             <li class="py-1">1990.01.13. Yangcheon-gu, Seoul, Republic of Korea</li>
             <li class="py-1">ghkdsigm3@naver.com / ghkdsigm3@gmail.com</li>
@@ -28,7 +28,7 @@
         </div>        
       </div>      
     </div>
-    <div class="mt-4 block">
+    <div class="mt-4 block dark:text-secondary text-secondary-dark">
       <!--기본정보(이력)-->
       <h4 class="text-2xl mb-10 font-light">
         <b class="text-4xl block font-extrabold mb-2">'적자생존은 만고불변의 진리'</b>
@@ -108,8 +108,8 @@ export default {
 .comment {
     font-family: "Noto Sans KR";
     letter-spacing: 0px;
-    -webkit-transition: all 1.7s ease 0.61s;
-    transition: all 1.7s ease 0.61s;
+    -webkit-transition: all 0.3s ease 0.31s;
+    transition: all 0.3s ease 0.31s;
     font-family: "Exo", sans-serif;
     &::before {
       content: "";
