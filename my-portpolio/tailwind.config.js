@@ -31,6 +31,9 @@ module.exports = {
           xl: '5rem',
           '2xl': '0rem',
         },
+        margin: {
+          '35vh': '35vh',
+        }
       },
     },
   },
