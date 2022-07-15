@@ -94,7 +94,7 @@ export default {
     });
 
     onMounted(()=>{
-
+      document.documentElement.style.background = '#1b1d20';
       let set = store.state.darkmode;
       if(set == true){
         localStorage.getItem('darkMode') == 'true'
@@ -131,7 +131,7 @@ export default {
             document.documentElement.classList.remove('dark');    
         } else {
             document.documentElement.classList.add('dark');
-            document.documentElement.style.background = 'black';
+            document.documentElement.style.background = '#1b1d20';
             localStorage.removeItem('changeDark', this.changeDark);  
         }   
     }
