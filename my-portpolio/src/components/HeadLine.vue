@@ -1,11 +1,13 @@
 <template>
-  <div class="self-center xl:mt-96 lg:mt-80 md:mt-12 mt-0 text-right">
-    <router-link :to="route.path" :class="`transition-all ease-in-out linkWrap`" v-for="route in routes" :key="route">
-      <div v-if="route.meta.isMenu">
-          <i :class="route.icon"></i> 
-          <span class="ml-5 font-light lg:inline-block navLink py-4" style="font-size:10vh">{{route.title}}</span>
-      </div>
-    </router-link>  
+  <div class="self-center xl:mt-96 lg:mt-80 md:mt-12 mt-0 text-right flex-col flex">
+    <div style="text-align:right; text-align:-webkit-right;" >
+      <router-link :to="route.path" :class="`transition-all ease-in-out linkWrap block w-fit`" v-for="route in routes" :key="route">
+        <div v-if="route.meta.isMenu" class="">
+            <i :class="route.icon"></i> 
+            <span class="ml-5 font-light lg:inline-block navLink py-4" style="font-size:10vh">{{route.title}}</span>
+        </div>
+      </router-link>  
+    </div>
   </div> 
 </template>
 

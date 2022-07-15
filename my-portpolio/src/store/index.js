@@ -4,17 +4,20 @@ import createPersistedState from 'vuex-persistedstate'
 const store = createStore({
   state() {
     return {
-      darkmode: false,
+      dark: false
     }
   },
+  getters:{
+    dark: (state) => state.dark
+  },
   mutations: {
-    SET_CHANGEMODE:  (state, payload) => {
-      state.darkmode = payload
-    },
+    SET_DARK: (state, bool) => {
+      state.dark = bool;
+    }
   },
   actions:{
     toggleDarkMode({ commit }, payload){
-        commit('SET_CHANGEMODE', payload)
+        commit('SET_DARK', payload)
     }
   },
   plugins: [createPersistedState()],

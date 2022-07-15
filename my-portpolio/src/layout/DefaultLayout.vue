@@ -1,6 +1,6 @@
 <template>
   <div class="flex h-screen mx-auto relative container">
-    <div class="" id="noise" style="background-image: url('https://www.marvinx.com/assets/images/noise.png');"></div>
+    <div class="" id="noise"></div>
     <!--사이드섹션-->
     <div class="lg:w-1/6 w-0 lg:flex hidden py-5 justify-center h-screen items-center border-gray-200 dark:border-gray-800 text-center">
       <div class="flex flex-col text-center">
@@ -11,9 +11,47 @@
         </router-link>
         <!--다크모드-->
         <div class="relative">
-            <button type="button" class="px-2 mb-1" @click="toggleDarkMode" :class="this.$store.state.darkmode ? 'dark' : ''">
+            <!-- <button type="button" class="px-2 mb-1" @click="toggleDarkMode" :class="this.$store.state.darkmode ? 'dark' : ''">
                 <i class="far fa-sun transition-all ease-in-out border-2 border-gray-800 text-yellow-50 lg:px-5 px-3 py-2 dark:bg-gray-800 rounded-full lg:text-base text-base dark:hover:bg-opacity-80" :class="isDark ? 'hidden' : 'block'"> <span class="hidden lg:inline-block pl-0 lg:pl-2 text-white font-light"> 라이트모드</span></i>
                 <i class="fas fa-moon transition-all ease-in-out border-2 border-blue-600  text-blue-600 lg:px-5 px-3 py-2 rounded-full lg:text-base text-base hover:bg-gray-50" :class="isDark ? 'block' : 'hidden'"> <span class="hidden lg:inline-block pl-0 lg:pl-2 font-light"> 다크모드</span></i>
+            </button> -->
+
+            <button
+              class="
+                p-2
+              text-slate-600 hover:text-slate-800
+              dark:text-slate-300 dark:hover:text-slate-100
+              dark:bg-zinc-700 bg-zinc-400
+                focus-visible:ring-2 focus-visible:ring-green-400
+                rounded-lg
+              "
+              @click="toggleDarkMode"
+            >
+              <svg
+                 v-if="dark"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <svg
+                v-else
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                />
+              </svg>
+              
             </button>
         </div>
         <!--사이드메뉴-->
@@ -36,7 +74,7 @@
 
 <script>
 import { ref,onBeforeMount,onMounted, computed } from 'vue'
-import { useStore } from 'vuex'
+import { useStore, mapGetters } from 'vuex'
 import router from '../router'
 
 export default {
@@ -56,6 +94,7 @@ export default {
     });
 
     onMounted(()=>{
+
       let set = store.state.darkmode;
       if(set == true){
         localStorage.getItem('darkMode') == 'true'
@@ -97,6 +136,9 @@ export default {
         }   
     }
   },
+  computed: {
+      ...mapGetters(['dark'])
+    },
   
 }
 </script>
